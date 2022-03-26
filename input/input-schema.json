@@ -1,0 +1,90 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Network",
+    "definitions": {
+        "Network": {
+            "type": "object",
+            "additionalProperties": {},
+            "properties": {
+                "locations": {
+                    "type": "array",
+                    "description": "Locations and connections",
+                    "items": {
+                        "$ref": "#/definitions/Location"
+                    }
+                },
+                "token": {
+                    "type": "string",
+                    "description": "Unique problem token for this network"
+                }
+            },
+            "required": ["token", "locations"],
+            "title": "Network"
+        },
+        "Location": {
+            "type": "object",
+            "additionalProperties": {},
+            "properties": {
+                "connections": {
+                    "type": "array",
+                    "description": "Connections from this point to another nearby points",
+                    "items": {
+                        "$ref": "#/definitions/Connection"
+                    }
+                },
+                "kind": {
+                    "$ref": "#/definitions/Kind"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Location name"
+                }
+            },
+            "required": [
+                "connections",
+                "kind",
+                "name"
+            ],
+            "title": "Location"
+        },
+        "Connection": {
+            "type": "object",
+            "additionalProperties": {},
+            "properties": {
+                "distance": {
+                    "type": "number",
+                    "description": "Distance (km) to the connecting point"
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Connection identifier"
+                },
+                "speed": {
+                    "type": "number",
+                    "description": "Constant speed (km/h)"
+                },
+                "to": {
+                    "type": "string",
+                    "description": "Location name"
+                }
+            },
+            "required": [
+                "distance",
+                "id",
+                "speed",
+                "to"
+            ],
+            "title": "Connection"
+        },
+        "Kind": {
+            "type": "string",
+            "description": "Location type",
+            "enum": [
+                "origin",
+                "waypoint",
+                "destination"
+            ],
+            "title": "Kind"
+        }
+    }
+}

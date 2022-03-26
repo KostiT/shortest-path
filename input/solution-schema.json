@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Solution",
+    "definitions": {
+        "Solution": {
+            "type": "object",
+            "additionalProperties": {},
+            "properties": {
+                "destination": {
+                    "type": "string",
+                    "description": "The location name of the final destination"
+                },
+                "origin": {
+                    "type": "string",
+                    "description": "The location name of the origin"
+                },
+                "path": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "The complete path from origin to destination. An array of location names."
+                },
+                "token": {
+                    "type": "string",
+                    "description": "Token from the input file."
+                }
+            },
+            "required": [
+                "destination",
+                "origin",
+                "path",
+                "token"
+            ],
+            "title": "Solution"
+        }
+    }
+}

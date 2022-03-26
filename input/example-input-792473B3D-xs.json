@@ -1,0 +1,443 @@
+{
+  "locations": [
+    {
+      "name": "W01",
+      "kind": "waypoint",
+      "connections": [
+        {
+          "id": "E00",
+          "to": "W02",
+          "speed": 25,
+          "distance": 6
+        },
+        {
+          "id": "E01",
+          "to": "W06",
+          "speed": 11,
+          "distance": 1
+        }
+      ]
+    },
+    {
+      "name": "W02",
+      "kind": "waypoint",
+      "connections": [
+        {
+          "id": "E00",
+          "to": "W01",
+          "speed": 25,
+          "distance": 6
+        },
+        {
+          "id": "E02",
+          "to": "W03",
+          "speed": 82,
+          "distance": 216
+        },
+        {
+          "id": "E03",
+          "to": "W04",
+          "speed": 40,
+          "distance": 49
+        },
+        {
+          "id": "E04",
+          "to": "W13",
+          "speed": 19,
+          "distance": 6
+        },
+        {
+          "id": "E05",
+          "to": "W14",
+          "speed": 597,
+          "distance": 1644
+        }
+      ]
+    },
+    {
+      "name": "W03",
+      "kind": "waypoint",
+      "connections": [
+        {
+          "id": "E02",
+          "to": "W02",
+          "speed": 82,
+          "distance": 216
+        },
+        {
+          "id": "E06",
+          "to": "W05",
+          "speed": 848,
+          "distance": 2433
+        },
+        {
+          "id": "E07",
+          "to": "W08",
+          "speed": 77,
+          "distance": 57
+        },
+        {
+          "id": "E08",
+          "to": "W19",
+          "speed": 819,
+          "distance": 146
+        }
+      ]
+    },
+    {
+      "name": "W04",
+      "kind": "waypoint",
+      "connections": [
+        {
+          "id": "E03",
+          "to": "W02",
+          "speed": 40,
+          "distance": 49
+        },
+        {
+          "id": "E09",
+          "to": "W07",
+          "speed": 40,
+          "distance": 70
+        }
+      ]
+    },
+    {
+      "name": "W05",
+      "kind": "waypoint",
+      "connections": [
+        {
+          "id": "E06",
+          "to": "W03",
+          "speed": 848,
+          "distance": 2433
+        },
+        {
+          "id": "E10",
+          "to": "W12",
+          "speed": 691,
+          "distance": 558
+        },
+        {
+          "id": "E11",
+          "to": "O5",
+          "speed": 504,
+          "distance": 321
+        }
+      ]
+    },
+    {
+      "name": "W06",
+      "kind": "waypoint",
+      "connections": [
+        {
+          "id": "E01",
+          "to": "W01",
+          "speed": 11,
+          "distance": 1
+        },
+        {
+          "id": "E12",
+          "to": "W10",
+          "speed": 79,
+          "distance": 158
+        },
+        {
+          "id": "E13",
+          "to": "W16",
+          "speed": 57,
+          "distance": 120
+        }
+      ]
+    },
+    {
+      "name": "W07",
+      "kind": "waypoint",
+      "connections": [
+        {
+          "id": "E09",
+          "to": "W04",
+          "speed": 40,
+          "distance": 70
+        },
+        {
+          "id": "E14",
+          "to": "W09",
+          "speed": 91,
+          "distance": 179
+        },
+        {
+          "id": "E15",
+          "to": "W17",
+          "speed": 17,
+          "distance": 33
+        }
+      ]
+    },
+    {
+      "name": "W08",
+      "kind": "waypoint",
+      "connections": [
+        {
+          "id": "E07",
+          "to": "W03",
+          "speed": 77,
+          "distance": 57
+        }
+      ]
+    },
+    {
+      "name": "W09",
+      "kind": "waypoint",
+      "connections": [
+        {
+          "id": "E14",
+          "to": "W07",
+          "speed": 91,
+          "distance": 179
+        },
+        {
+          "id": "E16",
+          "to": "O2",
+          "speed": 18,
+          "distance": 21
+        },
+        {
+          "id": "E17",
+          "to": "O3",
+          "speed": 17,
+          "distance": 45
+        }
+      ]
+    },
+    {
+      "name": "W10",
+      "kind": "waypoint",
+      "connections": [
+        {
+          "id": "E12",
+          "to": "W06",
+          "speed": 79,
+          "distance": 158
+        },
+        {
+          "id": "E18",
+          "to": "W11",
+          "speed": 605,
+          "distance": 1158
+        }
+      ]
+    },
+    {
+      "name": "W11",
+      "kind": "waypoint",
+      "connections": [
+        {
+          "id": "E18",
+          "to": "W10",
+          "speed": 605,
+          "distance": 1158
+        },
+        {
+          "id": "E19",
+          "to": "O1",
+          "speed": 42,
+          "distance": 95
+        }
+      ]
+    },
+    {
+      "name": "W12",
+      "kind": "waypoint",
+      "connections": [
+        {
+          "id": "E10",
+          "to": "W05",
+          "speed": 691,
+          "distance": 558
+        },
+        {
+          "id": "E20",
+          "to": "O4",
+          "speed": 44,
+          "distance": 101
+        }
+      ]
+    },
+    {
+      "name": "W13",
+      "kind": "waypoint",
+      "connections": [
+        {
+          "id": "E04",
+          "to": "W02",
+          "speed": 19,
+          "distance": 6
+        }
+      ]
+    },
+    {
+      "name": "W14",
+      "kind": "waypoint",
+      "connections": [
+        {
+          "id": "E05",
+          "to": "W02",
+          "speed": 597,
+          "distance": 1644
+        },
+        {
+          "id": "E21",
+          "to": "W15",
+          "speed": 38,
+          "distance": 97
+        },
+        {
+          "id": "E22",
+          "to": "D1",
+          "speed": 42,
+          "distance": 34
+        },
+        {
+          "id": "E23",
+          "to": "W18",
+          "speed": 30,
+          "distance": 76
+        }
+      ]
+    },
+    {
+      "name": "W15",
+      "kind": "waypoint",
+      "connections": [
+        {
+          "id": "E21",
+          "to": "W14",
+          "speed": 38,
+          "distance": 97
+        }
+      ]
+    },
+    {
+      "name": "W16",
+      "kind": "waypoint",
+      "connections": [
+        {
+          "id": "E13",
+          "to": "W06",
+          "speed": 57,
+          "distance": 120
+        }
+      ]
+    },
+    {
+      "name": "W17",
+      "kind": "waypoint",
+      "connections": [
+        {
+          "id": "E15",
+          "to": "W07",
+          "speed": 17,
+          "distance": 33
+        }
+      ]
+    },
+    {
+      "name": "W18",
+      "kind": "waypoint",
+      "connections": [
+        {
+          "id": "E23",
+          "to": "W14",
+          "speed": 30,
+          "distance": 76
+        }
+      ]
+    },
+    {
+      "name": "W19",
+      "kind": "waypoint",
+      "connections": [
+        {
+          "id": "E08",
+          "to": "W03",
+          "speed": 819,
+          "distance": 146
+        }
+      ]
+    },
+    {
+      "name": "O1",
+      "kind": "origin",
+      "connections": [
+        {
+          "id": "E19",
+          "to": "W11",
+          "speed": 42,
+          "distance": 95
+        }
+      ]
+    },
+    {
+      "name": "O2",
+      "kind": "origin",
+      "connections": [
+        {
+          "id": "E16",
+          "to": "W09",
+          "speed": 18,
+          "distance": 21
+        }
+      ]
+    },
+    {
+      "name": "O3",
+      "kind": "origin",
+      "connections": [
+        {
+          "id": "E17",
+          "to": "W09",
+          "speed": 17,
+          "distance": 45
+        }
+      ]
+    },
+    {
+      "name": "O4",
+      "kind": "origin",
+      "connections": [
+        {
+          "id": "E20",
+          "to": "W12",
+          "speed": 44,
+          "distance": 101
+        }
+      ]
+    },
+    {
+      "name": "O5",
+      "kind": "origin",
+      "connections": [
+        {
+          "id": "E11",
+          "to": "W05",
+          "speed": 504,
+          "distance": 321
+        }
+      ]
+    },
+    {
+      "name": "D1",
+      "kind": "destination",
+      "connections": [
+        {
+          "id": "E22",
+          "to": "W14",
+          "speed": 42,
+          "distance": 34
+        }
+      ]
+    }
+  ],
+  "token": "3d629b62"
+}
